@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Catalina Mena">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Taco Palace</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="static/images/libro-abierto (1).png" alt="logo">
+                <div class="titulo">
+                    <h1 class="bibliotecaTitulo">Biblioteca</h1>
+                    <h1 class="horizonte">Horizonte</h1>
+                </div>
+            </div>
+            <div class="inputCarrito">
+                <div class="email">
+                    <input type="text" class="ingresar" placeholder="Email">
+                    <button onclick="login()" class="boton">Ingresar</button>
+                </div>
+                <div class="carrito">
+                    <img src="static/images/libros.png" alt="librosSeleccionados">
+                    <p>Libros Seleccionados:</p>
+                    <p class="contador">0</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="contenedorPrincipal">
+            <section class="menu">
+                <div class="generos">
+                    <img src="static/images/libro-abierto (1).png" alt="novelas">
+                    <p>Novelas</p>
+                </div>
+                <div class="generos">
+                    <img src="static/images/ciencias (1).png" alt="ciencia">
+                    <p>Ciencia</p>
+                </div>
+                <div class="generos">
+                    <img src="static/images/historia.png" alt="historia">
+                    <p>Historia</p>
+                </div>
+                <div class="generos">
+                    <img src="static/images/ordenador-portatil.png" alt="tecnologia">
+                    <p>Tecnología</p>
+                </div>
+                <div class="generos">
+                    <img src="static/images/estudios-de-arte.png" alt="arte">
+                    <p>Arte</p>
+                </div>
+                <div class="generos">
+                    <img src="static/images/oso-de-peluche.png" alt="infantil">
+                    <p>Infantil</p>
+                </div>
+            </section>
+            <div class="secciones">
+                <section class="section1">
+                    <div class="loMejor">
+                        <h1>Descubre nuevas historias</h1>
+                        <p>Explora nuestra biblioteca virtual y encuentra libros para todos los gustos. Conocimiento,
+                            aventura y mucho más al alcance de un clic.</p>
+                    </div>
+                    <div class="video">
+                        <video src="video.mp4" autoplay loop muted controls></video>
+                        <p>Conoce la Biblioteca Horizonte</p>
+                    </div>
+                </section>
+                <section class="section2">
+                    <h2>Libros recomendados:</h2>
+                    <div class="libro">
+                        <img src="static/images/cien-anos-de-soledad.jpg" alt="orden-tacos">
+                        <div class="separacion">
+                            <div>
+                                <p>Cien años de soledad</p>
+                                <p>Gabriel García Márquez</p>
+                                <a href="#">Ver Más...</a>
+                            </div>
+                            <div class="botonAgregar">
+                                <button class="agregar">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="libro">
+                        <img src="static/images/sapiens.jpg" alt="orden-flautas">
+                        <div class="separacion">
+                            <div>
+                                <p>Sapiens</p>
+                                <p>Yuval Noah Harari</p>
+                                <a href="#">Ver Más...</a>
+                            </div>
+                            <div class="botonAgregar">
+                                <button class="agregar">+</button>
+                            </div>
+                        </div>
+                        <div class="libro">
+                            <img src="static/images/el-principito.jfif" alt="orden-flautas">
+                            <div class="separacion">
+                                <div>
+                                    <p>El principito</p>
+                                    <p>Antoine de Saint Exupéry</p>
+                                    <a href="#">Ver Más...</a>
+                                </div>
+                                <div class="botonAgregar">
+                                    <button class="agregar">+</button>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
