@@ -7,28 +7,35 @@ function login() {
     if (ingresar === "") {
         alert("Ingresa tu correo")
     } else {
-        alert("Bienvenido")
+        alert(`Bienvenido ${ingresar}`)
     }
 }
 
-const boton = document.querySelector(".agregar");
+const botones = document.querySelectorAll(".agregar, .agregar2, .agregar3");
 const contador = document.querySelector(".contador");
+
 let carrito = 0;
-boton.onclick = () => {
-    carrito++;
-    contador.innerText = `${carrito}`;
-}
 
-const imagen = document.querySelector(".imagen");
-
-const imagenOriginal = "static/images/comida-mexicana.jpg";
-
-const imagenNueva = "static/images/comida-mexicana2.jpg";
-
-imagen.addEventListener('mouseover', () => {
-    imagen.src = imagenNueva;
+botones.forEach((boton) => {
+    boton.onclick = () => {
+        carrito++;
+        contador.innerText = `${carrito}`;
+    };
 });
 
-imagen.addEventListener('mouseout', () => {
-    imagen.src = imagenOriginal;
+const video = document.querySelector(".videoCambio");
+
+const videoOriginal = "static/video/laBiblioteca.mp4";
+const videoNuevo = "static/video/bibliotecaNacional.mp4";
+
+video.addEventListener('mouseover', () => {
+    video.src = videoNuevo;
+    video.load(); 
+    video.play();
+});
+
+video.addEventListener('mouseout', () => {
+    video.src = videoOriginal;
+    video.load();
+    video.play();
 });
